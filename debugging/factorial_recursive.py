@@ -1,29 +1,21 @@
 #!/usr/bin/python3
 import sys
 
+# Function Description: Computes the factorial of an integer.
 def factorial(n):
-    """
-    Calculate the factorial of a given non-negative integer n using recursion.
+    # Parameters:
+    # - n: Integer for which factorial is to be computed.
 
-    Function Description:
-    This function computes the factorial of the given integer `n` using a recursive approach.
-    The factorial of a non-negative integer n is defined as the product of all positive integers
-    less than or equal to n. By definition, the factorial of 0 is 1.
-
-    Parameters:
-    n (int): A non-negative integer for which the factorial is to be calculated.
-
-    Returns:
-    int: The factorial of the input integer `n`. If n is 0, the function returns 1.
-
-    Example:
-    factorial(4)  # Returns 24 because 4! = 4 * 3 * 2 * 1 = 24
-    """
+    # Returns:
+    # - The factorial of n.
+    
+    # Base condition: if n is 0, return 1 as the factorial of 0 is 1.
     if n == 0:
         return 1
     else:
-        return n * factorial(n - 1)
+        # Recursion: return n multiplied by the factorial of (n-1).
+        return n * factorial(n-1)
 
-# Parse the integer from the command-line argument, calculate the factorial, and print the result
+# Compute the factorial of the integer passed as argument in the command line.
 f = factorial(int(sys.argv[1]))
 print(f)
