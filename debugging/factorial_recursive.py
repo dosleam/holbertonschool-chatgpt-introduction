@@ -7,7 +7,7 @@ def factorial(n):
 
     Function Description:
     This function computes the factorial of the given integer `n` using a recursive approach.
-    The factorial of a non-negative integer n is defined as the product of all positive integers 
+    The factorial of a non-negative integer n is defined as the product of all positive integers
     less than or equal to n. By definition, the factorial of 0 is 1.
 
     Parameters:
